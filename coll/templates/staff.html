@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSI WITS</title>
+  <link rel="stylesheet" href="{% static 'css/style6.css' %}">
+   <link rel="stylesheet" type="text/css" href="{% static 'css/footer.css' %}">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://kit.fontawesome.com/feb90560dd.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="top">
+        <div class="topbar-box">
+            <div class="logo">
+                <a class="img" href="{% url 'home' %}"><img src="{% static 'img/WITS_LOGO.png' %}" style="width:100px; height:110px;"> </a>
+                <a class="img1" href="{% url 'home' %}"><img src="{% static 'img/AICTE-logo.png' %}" style="width:150px; height:120px;">
+                    <img src="{% static 'img/jntuhlogo.png' %}" style="width:100px; height:120px;"> </a>
+                <!-- <a class="img2" href="Home.html"><img src="img/jntuhlogo.png" style="width:100px; height:110px;"> </a> -->
+            </div>
+            <h2>CSI WESLEY INSTITUTE OF TECHNOLOGY AND SCIENCES</h2>
+            <h3>(APPROVED BY AICTE AND AFFILIATED TO JNTUH)</h3>
+            <div class="p" style="display: flex;">
+                <p class="eamcet">EAMCET Code :<span style="color: #ff0000;">WESL</span> </p>&nbsp;&nbsp;&nbsp;
+                <p class="ecet">ECET Code : <span style="color: #ff0000;">WESL</span></p>
+
+            </div>
+
+        </div>
+
+        <!-- header start -->
+        <header class="header">
+            <div class="container">
+                <div class="header-main">
+
+                    <div class="open-nav-menu">
+                        <span></span>
+                    </div>
+                    <div class="menu-overlay">
+                    </div>
+                    <!-- navigation menu start -->
+                    <nav class="nav-menu">
+                        <div class="close-nav-menu">
+                            <!-- <img src="img/clg1.jpg" alt="close"> -->
+                        </div>
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="{% url 'home' %}">Home</a>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+
+                                <a href="#" data-toggle="sub-menu">About<i class="plus"></i>
+                                </a>
+                               <ul class="sub-menu">
+                                   <li class="menu-item"><a href="{% url 'about' %}">About College</a></li>
+                                   <li class="menu-item"><a href="{% url 'vision' %}">Vision & Mission</a></li>
+                                  
+                                   <li class="menu-item"><a href="{% url 'chairmanDesk' %}">Chairman Desk</a></li>
+                                   <li class="menu-item"><a href="{% url 'directorDesk'%}">Director Desk</a></li>
+                                   <li class="menu-item"><a href="{% url 'principal' %}">Principal Desk</a></li>
+                                   <li class="menu-item"><a href="{% url 'universityNominee' %}">University Nominee</a></li>
+                               </ul>
+                            </li>
+                                    <li class="menu-item">
+                                        <a href="{%  url 'staff' %}">Staff</a>
+                                    </li>
+
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#" data-toggle="sub-menu">Labs<i class="plus"></i></a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="{% url 'computerLab' %}">Computer Lab</a></li>
+                                            <li class="menu-item"><a href="{% url 'ELCSAndALCLab' %}">ELCS And ALCS lab</a></li>
+                                            <li class="menu-item"><a href="{% url 'EngineeringWorkshop' %}">Engineering Workshop</a></li>
+                                            <li class="menu-item"><a href="{% url 'BEELab' %}">BEE Lab</a></li>
+                                            <li class="menu-item"><a href="{% url 'ChemistryLab' %}">Chemistry Lab</a></li>
+                                            <li class="menu-item"><a href="{% url 'PhysicsLab' %}">Physics Lab</a></li>
+                                            <li class="menu-item"><a href="{%url 'ITWorkshop' %}">IT Workshop</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- <li class="menu-item">
+                   <a href="#">Libarary</a>
+                </li> -->
+
+                                    <li class="menu-item">
+                                        <a href="{%  url 'staff' %}">Library</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="{%  url 'staff' %}">Placement Cell</a>
+                                    </li>
+                                    <li class="menu-item">
+
+                                        <a href="{%  url 'facultylogin' %}" data-toggle="sub-menu">Faculty Login
+                      <!-- <i class="plus"></i> -->
+                  </a>
+                                        <!-- <ul class="sub-menu">
+                       <li class="menu-item"><a href="facultylogin.html">Faculty Login</a></li>
+                       <li class="menu-item"><a href="studentlogin.html">Student Login</a></li>
+                       <li class="menu-item"><a href="#">page 3</a></li>
+                       <li class="menu-item"><a href="#">page 4</a></li> -->
+                                        <!-- </ul> -->
+                                    </li>
+
+                                    <li class="menu-item">
+                                        <a href="{% url 'studentlogin' %}">Student Login</a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+
+                                        <a href="#" data-toggle="sub-menu">AICTE<i class="plus"></i>
+                                        </a>
+                                       <ul class="sub-menu">
+                                           <li class="menu-item"><a href="{% url 'about' %}">Disclosures</a></li>
+                                           <li class="menu-item"><a href="{% url 'vision' %}">Approvels</a></li>
+                                           <li class="menu-item"><a href="{% url 'chairmanDesk' %}">Grevence</a></li>
+
+                                       </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="{% url 'gallery' %}">Gallery</a>
+                                    </li>
+
+                                    <li class="menu-item">
+                                        <a href="{% url 'contact' %}">Contact Us</a>
+                                    </li>
+
+                                </ul>
+                    </nav>
+                    <!-- navigation menu end -->
+                </div>
+            </div>
+
+        </header>
+	<!-- header end -->
+  
+   <!-- home section start -->
+   <section class="home-section">
+   </section>
+  
+   <!-- <footer> -->
+	 <!-- <div class="footer-content"> -->
+	 <!-- <h3>CSI Wesley </h3> -->
+		 <!-- <p>csi wits engineering college , paradise,sec-bad</p> -->
+		 <!-- <ul class="socials">
+			 <li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+			 <li><a href="#"><i class="fa fa-Google-plus"> </i></a></li>
+  
+  
+		 </ul> -->
+  
+	 <!-- </div> -->
+	 <!-- <div class="footer-bottom">
+		 <p> copyright &copy2021 CSI WITS</p>
+  
+	 </div>
+  </footer> -->
+   <!-- home section end -->
+   
+  <script src="js/script.js">  
+  </script>
+  <!-- <script> 
+  var navbar = document.getElementsByClassName("nav-menu")
+  var menu = document.getElementsByClassName("menu")
+  
+  window.onscroll = function(){
+	 if (window.pageYOffset >= menu.OffsetTop) {
+		navbar.classList.add("sticky");
+		
+	 }
+	 else{
+		navbar.classList.remove("sticky");
+	 }
+  
+	 
+  }
+  </script> -->
+
+	
+</body>
+
+<section>
+	<div class="heading"> 
+	 <span>STAFF</span>
+      </div>
+	<div class="container1" >
+		
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/vimal.jpeg'%}"></div>
+			<h4>Dr.B VIMAL SUKUMAR</h4>
+			<h5>Director</h5>
+			<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat commodi ad excepturi id expedita cupiditate repellendus possimus unde culpa! Eius.</p>
+			<a href="#">Read More</a> -->
+		</div>
+
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/Yohan.jpg'%}"></div>
+			<h4>Dr.P M YOHAN</h4>
+			<h5>Principal</h5>
+			<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat commodi ad excepturi id expedita cupiditate repellendus possimus unde culpa! Eius.</p>
+			<a href="#">Read More</a> -->
+		</div>
+		
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/Sudhakar.jpg'%}"></div>
+			<h4>Dr.K V S SUDHAKAR</h4>
+			<h5>M.Tech, P.h.D Associate Professor Dept. Of CSE</h5>
+			<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat commodi ad excepturi id expedita cupiditate repellendus possimus unde culpa! Eius.</p>
+			<a href="#">Read More</a> -->
+		</div>
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/Subhan.jpg'%}"></div>
+			<h4>Mr.P ABDUL SUBHAHANALLA</h4>
+			<h5>M.Tech,(P.h.D) Associate Professor Dept. Of CSE</h5>
+			<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat commodi ad excepturi id expedita cupiditate repellendus possimus unde culpa! Eius.</p>
+			<a href="#">Read More</a> -->
+		</div>
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/kesa.jpg'%}"></div>
+			<h4>MR. N.CHENNA KESHAVULU</h4>
+			<h5>M.Tech,(P.h.D) Associate Professor Dept. Of CSE</h5>
+			<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat commodi ad excepturi id expedita cupiditate repellendus possimus unde culpa! Eius.</p>
+			<a href="#">Read More</a> -->
+		</div>
+ 
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/santosh.jpg'%}"></div>
+			<h4>Mr.B SANTOSH KUMAR</h4>
+			<h5>Assistant Professor Dept. Of H&S</h5>
+		
+		</div>
+	
+           
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/parvathi.jpg'%}"></div>
+			<h4>MS. PARVATHI AKKALA</h4>
+			<h5>M.Tech Assistant Professor Dept. Of CSE</h5>
+			<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat commodi ad excepturi id expedita cupiditate repellendus possimus unde culpa! Eius.</p>
+			<a href="#">Read More</a> -->
+		</div>
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/SATISH.jpg'%}"></div>
+			<h4>MR. PALLYVELA SATISH BHASKER</h4>
+			<h5>M.Tech Assistant Professor Dept. Of CSE</h5>
+			<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat commodi ad excepturi id expedita cupiditate repellendus possimus unde culpa! Eius.</p>
+			<a href="#">Read More</a> -->
+		</div> 
+
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/shiva.jpg'%}"></div>
+			<h4>MR. NAKKIRTHI SHIVA KUMAR</h4>
+			<h5>M.Tech Assistant Professor Dept. Of CSE</h5>
+		</div> 
+
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/SEETHAMMA.jpg'%}"></div>
+			<h4>MS. SEETHAMMA CHUNDURI</h4>
+			<h5>M.Tech Assistant Professor Dept. Of CSE</h5>
+			
+		</div> 
+		
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/DHEERAJ.jpg'%}"></div>
+			<h4>MR. A DHEERAJ RAO</h4>
+			<h5>M.Tech Assistant Professor Dept. Of CSE</h5>
+		</div> 
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/SATHISH.jpg'%}"></div>
+			<h4>MR.D SATHISH</h4>
+			<h5>M.Tech Assistant Professor Dept. Of CSE</h5>
+		</div> 
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/ARUN.jpg'%}"></div>
+			<h4>MR. M. ARUN</h4>
+			<h5>M.Tech Assistant Professor Dept. Of CSE</h5>
+		</div> 
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/ANIL.jpg' %}"></div>
+			<h4>MR.M ANIL KUMAR</h4>
+			<h5>M.Tech Assistant Professor Dept. Of CSE</h5>
+		</div> 
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/BHASKAR.jpg'%}"></div>
+			<h4>MR. G BHASKAR</h4>
+			<h5>M.Tech,(P.h.D) Assistant Professor Dept. Of CSE</h5>
+		</div> 
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/ARUN M.jpg'%}"></div>
+			<h4>MR. M. ARUN</h4>
+			<h5>M.Tech Assistant Professor Dept. Of CSE</h5>
+		</div> 
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/SIKINDER.jpg'%}"></div>
+			<h4>MR.B SIKINDER</h4>
+			<h5>M.Tech Assistant Professor Dept. Of CSE</h5>
+		</div> 
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/ARUNA.jpg'%}"></div>
+			<h4>Ms.ARUNA M</h4>
+			<h5>M.Tech,(P.h.D) Assistant Professor Dept. Of CSE</h5>
+		</div>
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/ASHOK.jpg'%}"></div>
+			<h4>MR.U ASHOK</h4>
+			<h5>M.Tech Assistant Professor Dept. Of CSE</h5>
+		</div> 
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/RANADEEER.jpg'%}"></div>
+			<h4>MR.RANADEEER G</h4>
+			<h5>M.Tech Assistant Professor Dept. Of CSE</h5>
+		</div> 
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/SHARAN.jpg'%}"></div>
+			<h4>MR.SHARAN KUMAR ILA</h4>
+			<h5>M.Tech,(P.h.D)  Assistant Professor Dept. Of CSE</h5>
+		</div> 
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/K ASHOK.jpg'%}"></div>
+			<h4>Mr. K ASHOK KUMAR REDDY</h4>
+			<h5> Assistant Professor Dept. Of CSE</h5>
+		</div>
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/PALLAVI.jpg'%}"></div>
+			<h4>Ms.SANGAVI PALLAVI</h4>
+			<h5> Assistant Professor Dept. Of CSE</h5>
+		</div>
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/thirumal.jpg'%}"></div>
+			<h4>Mr.G SAI THIRUMAL</h4>
+			<h5>Associate Professor Dept. Of CSE</h5>
+			
+		</div>
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/naveen.jpg'%}"></div>
+			<h4>Mr.G NAVEEN</h4>
+			<h5>Assistant Professor Dept. Of H&S</h5>
+		</div>
+
+		
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/manoj.jpg'%}"></div>
+			<h4>Mr.SRINIVASA MANOJ RAGUTHU</h4>
+			<h5>Assistant Professor Dept. Of H&S</h5>
+			
+		</div>
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/cassiana.jpg'%}"></div>
+			<h4>Ms.CASSIANA WALTER</h4>
+			<h5>Assistant Professor Dept. Of H&S</h5>
+			
+		</div>
+
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/NARENDRA.jpg'%}"></div>
+			<h4>Mr.A NARENDER REDDY</h4>
+			<h5>Assistant Professor Dept. Of H&S</h5>
+		
+		</div>
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/V RAMA.jpg'%}"></div>
+			<h4>Mr.V V RAMA KRISHNAM RAJU</h4>
+			<h5>Assistant Professor Dept. Of H&S</h5>
+		
+		</div>
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/CH EDAIAH.jpg'%}"></div>
+			<h4>Mr. CH EDAIAH</h4>
+			<h5>Assistant Professor Dept. Of H&S</h5>
+		
+		</div>
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/RAVI.jpg'%}"></div>
+			<h4>MR.V RAVI</h4>
+			<h5>Assistant Professor Dept. Of H&S</h5>
+		
+		</div>
+		<div class="card">
+			<div class="imgBox"><img src="{% static 'img/sandeep.jpg'%}"></div>
+			<h4>Mr.D SANDEEP</h4>
+			<h5>Dept. Of LIBRARY</h5>
+			
+		</div>
+
+
+		
+		
+	</div>
+
+</section>
+
+<div class="footer">
+    <div class="inner-footer">
+
+        <!--  for company name and description -->
+        <div class="footer-items">
+            <h1>About College</h1>
+            <div class="border1"></div>
+            <p>CSI WITS established in year 2015 , is one of the premier engineering colleges in the state of Telangana. WITS is sponsored by CHURCH OF SOUTH INDIA MEDAK DIOCESE ,for the past 100 years. WITS is approved by All India Council for Technical
+                Education (AICTE), New Delhi, and affiliated to Jawaharlal Nehru Technological University (JNTU), Hyderabad.</p>
+        </div>
+
+        <!--  for quick links  -->
+        <div class="footer-items">
+            <h3>Quick Links</h3>
+            <div class="border1"></div>
+            <!--for the underline -->
+            <ul>
+                <a href="{% url 'home' %}">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>Labs</li>
+                </a>
+                <a href="{% url 'contact' %}">
+                    <li>Contact</li>
+                </a>
+                <a href="{% url 'about' %}">
+                    <li>About</li>
+                </a>
+            </ul>
+        </div>
+
+        <!--  for some other links -->
+        <div class="footer-items">
+            <h3>Quick Links</h3>
+            <div class="border1"></div>
+            <!--for the underline -->
+            <ul>
+                <a href="{% url 'gallery' %}">
+                    <li>Gallery</li>
+                </a>
+                <a href="{% url 'staff' %}">
+                    <li>Staff</li>
+                </a>
+                <a href="#">
+                    <li>Results</li>
+                </a>
+                <a href="{% url 'principal' %}">
+                    <li>About Principal</li>
+                </a>
+            </ul>
+        </div>
+
+        <!--  for contact us info -->
+        <div class="footer-items">
+            <h3>Contact us</h3>
+            <div class="border1"></div>
+            <ul>
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i>1-7-132/142,P.G ROAD,NEAR PARADISE Secunderabad-50003, Telangana,India.
+                </li>
+                <li><i class="fa fa-phone" aria-hidden="true">  </i>040-27818137</li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i>principalxu1@gmail.com </li>
+            </ul>
+
+            <!--   for social links -->
+			<div class="social-media">
+                <h5 style="border-bottom: 2px solid orange; text-align:center;color:#fff"> Follow Us </h5>
+                <a href="https://instagram.com/csiwits?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--   Footer Bottom start  -->
+    <div class="footer-bottom">
+        Copyright &copy; CSI WITS 2022.
+    </div>
+</div>
+
+<!--   Footer Bottom end -->
+
+<!--   FOOTER END -->
+
+</html>

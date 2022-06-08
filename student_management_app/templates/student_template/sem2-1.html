@@ -1,0 +1,167 @@
+{% extends 'student_template/base_template.html' %}
+{% block page_title %} 2-1 SEMISTER NOTES {% endblock page_title %}
+
+{% block main_content %} {% load static %}
+
+
+<style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+   text-align: center;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #555777;
+  color: white;
+}
+
+.button {
+  background-color:#555555;
+  border: black;
+  color: white;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+}
+.button {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button:hover , button:active{
+  background-color: #555555;
+  color: white;
+}
+</style>
+
+<body>
+    <table id="customers">
+    <tr>
+    <th>Subject Name</th>
+    <th>Options</th>
+    </tr>
+
+    <tr>
+    <td>M-1 UNIT-1</td>
+    <td><button class="button">Download</button></td>
+    </tr>    
+
+    <tr>
+    <td>M-1 UNIT-2</td>
+    <td><button class="button">Download</button></td>
+    </tr> 
+
+    <tr>
+    <td>M-1 UNIT-3</td>
+    <td><button class="button">Download</button></td>
+    </tr> 
+
+        <tr>
+    <td>M-1 UNIT-4</td>
+    <td><button class="button">Download</button></td>
+    </tr> 
+
+    <tr>
+    <td>M-1 UNIT-5</td>
+    <td><button class="button">Download</button></td>
+    </tr> 
+
+    <tr>
+    <td>Chemistry UNIT-1</td>
+    <td><button class="button">Download</button></td>
+    </tr> 
+
+    <tr>
+    <td>Chemistry UNIT-2</td>
+    <td><button class="button">Download</button></td>
+    </tr> 
+
+    <tr>
+    <td>Chemistry UNIT-3</td>
+    <td><button class="button">Download</button></td>
+    </tr> 
+
+    <tr>
+    <td>Chemistry UNIT-4</td>
+    <td><button class="button">Download</button></td>
+    </tr> 
+
+    <tr>
+    <td>Chemistry UNIT-5</td>
+    <td><button class="button">Download</button></td>
+    </tr> 
+
+    <tr>
+    <td>English UNIT-1</td>
+    <td><button class="button">Download</button></td>
+    </tr> 
+
+    <tr>
+    <td>English UNIT-2</td>
+    <td><button class="button">Download</button></td>
+    </tr>
+
+    <tr>
+    <td>English UNIT-3</td>
+    <td><button class="button">Download</button></td>
+    </tr>
+
+    <tr>
+    <td>English UNIT-4</td>
+    <td><button class="button">Download</button></td>
+    </tr>
+
+    <tr>
+    <td>English UNIT-5</td>
+    <td><button class="button">Download</button></td>
+    </tr>
+
+    <tr>
+    <td>Basic Electrical Engineering UNIT-1</td>
+    <td><button class="button">Download</button></td>
+    </tr>
+
+    <tr>
+    <td>Basic Electrical Engineering UNIT-2</td>
+    <td><button class="button">Download</button></td>
+    </tr>
+
+    <tr>
+    <td>Basic Electrical Engineering UNIT-3</td>
+    <td><button class="button">Download</button></td>
+    </tr>
+
+    <tr>
+    <td>Basic Electrical Engineering UNIT-4</td>
+    <td><button class="button">Download</button></td>
+    </tr>
+
+    <tr>
+    <td>Basic Electrical Engineering UNIT-5</td>
+    <td><button class="button">Download</button></td>
+    </tr>
+
+</body>
+
+{% endblock main_content %}

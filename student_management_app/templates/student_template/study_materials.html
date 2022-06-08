@@ -1,0 +1,173 @@
+{% extends 'student_template/base_template.html' %}
+{% block page_title %} STUDY MATERIALS {% endblock page_title %}
+{% block main_content %} {% load static %}
+
+<style>
+
+.button {
+  background-color:#555555;
+  border: black;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+}
+.button {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button:hover , button:active{
+  background-color: #555555;
+  color: white;
+}
+
+</style>
+
+		<div class="row">
+			<div class="col-lg-3 col-6">
+				<!-- small box -->
+				<div class="small-box bg-info">
+					<div class="inner">
+
+
+						<h3>{{ Semone }}</h3>
+						
+						<p>Semister 1(1-1)</p>
+					</div>
+					<div class="icon">
+						<i class="ion ion-stats-bars"></i>
+					</div>
+					<a href="{% url 'sem1-1' %}" class="small-box-footer">NOTES<i class="fas fa-arrow-circle-right"></i></a>
+				</div>
+			</div>
+
+			<!-- ./col -->
+			<div class="col-lg-3 col-6">
+				<!-- small box -->
+				<div class="small-box bg-success">
+					<div class="inner">
+						<h3>{{ semtwo }}</h3>
+						<p>Semister 2(1-2)</p>
+					</div>
+					<div class="icon">
+						<i class="ion ion-stats-bars"></i>
+					</div>
+					<a href="{% url 'sem1-2' %}" class="small-box-footer">NOTES<i class="fas fa-arrow-circle-right"></i></a>
+				</div>
+			</div>
+
+   			<!-- ./col -->
+			<div class="col-lg-3 col-6">
+				<!-- small box -->
+				<div class="small-box bg-warning">
+					<div class="inner">
+						<h3>{{ semthree }}</h3>
+						<p>Semister 3(2-1)</p>
+					</div>
+					<div class="icon">
+						<i class="ion ion-stats-bars"></i>
+					</div>
+					<a href="{% url 'sem2-1' %}" class="small-box-footer">NOTES<i class="fas fa-arrow-circle-right"></i></a>
+				</div>
+			</div>
+
+            			<!-- ./col -->
+			<div class="col-lg-3 col-6">
+				<!-- small box -->
+				<div class="small-box bg-danger">
+					<div class="inner">
+						<h3>{{ semfour }}</h3>
+						<p>Semister 4(2-2)</p>
+					</div>
+					<div class="icon">
+						<i class="ion ion-stats-bars"></i>
+					</div>
+					<a href="{% url 'sem2-2' %}" class="small-box-footer">NOTES <i class="fas fa-arrow-circle-right"></i></a>
+				</div>
+			</div>
+            <br>
+            <br>
+            
+            <!-- ./col -->
+			<div class="col-lg-3 col-6">
+				<!-- small box -->
+				<div class="small-box bg-danger">
+					<div class="inner">
+						<h3>{{ semfive }}</h3>
+						<p>Semister 5(3-1)</p>
+					</div>
+					<div class="icon">
+						<i class="ion ion-stats-bars"></i>
+					</div>
+					<a href="{% url 'sem3-1' %}" class="small-box-footer">NOTES<i class="fas fa-arrow-circle-right"></i></a>
+				</div>
+			</div>
+
+
+        	<div class="col-lg-3 col-6">
+				<!-- small box -->
+				<div class="small-box bg-warning">
+					<div class="inner">
+						<h3>{{ semsix }}</h3>
+						<p>Semister 6(3-2)</p>
+					</div>
+					<div class="icon">
+						<i class="ion ion-stats-bars"></i>
+					</div>
+					<a href="{% url 'sem3-2' %}" class="small-box-footer">NOTES <i class="fas fa-arrow-circle-right"></i></a>
+				</div>
+			</div>
+
+        	<!-- ./col -->
+			<div class="col-lg-3 col-6">
+				<!-- small box -->
+				<div class="small-box bg-success">
+					<div class="inner">
+						<h3>{{ semseven }}</h3>
+						<p>Semister 7(4-1)</p>
+					</div>
+					<div class="icon">
+						<i class="ion ion-stats-bars"></i>
+					</div>
+					<a href="{% url 'sem4-1' %}" class="small-box-footer">NOTES<i class="fas fa-arrow-circle-right"></i></a>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-6">
+				<!-- small box -->
+				<div class="small-box bg-info">
+					<div class="inner">
+
+
+						<h3>{{ Semeight }}</h3>
+						
+						<p>Semister 8(4-2)</p>
+					</div>
+					<div class="icon">
+						<i class="ion ion-stats-bars"></i>
+					</div>
+					<a href="{% url 'sem4-2' %}" class="small-box-footer">NOTES<i class="fas fa-arrow-circle-right"></i></a>
+				</div>
+			</div>
+{% comment %} <div class="ma">
+    {% url 'sem1-1' as semone %}
+   <a href="{{ semone }}"> <button class="button">Semister 1(1-1)</button></a>
+    {% url 'sem1-2' as semtwo %}
+   <a href="{{ semtwo }}"> <button  class="button">Semister 2(1-2)</button></a>
+   {% url 'sem2-1' as semthree %}
+   <a href="{{ semthree }}"><button  class="button">Semister 3(2-1)</button></a>
+   <button  class="button">Semister 4(2-2)</button><br><br>
+   <button  class="button">Semister 5(3-1)</button>
+   <button  class="button">Semister 6(3-2)</button>
+   <button  class="button">Semister 7(4-1)</button>
+   <button  class="button">Semister 8(4-2)</button>
+</div> {% endcomment %}
+{% endblock main_content %}

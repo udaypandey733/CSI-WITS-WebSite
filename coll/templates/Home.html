@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSI WITS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/style.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/footer.css' %}"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/feb90560dd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="top">
+      <div class="topbar-box">
+        <div class="logo">
+          <a class="img" href="{% url 'home' %}"
+            ><img
+              class="img1"
+              src="{% static 'img/WITS_LOGO.png' %}"
+              style="width: 100px; height: 110px"
+            />
+          </a>
+          <!-- <img class="img2" src="{% static 'img/AICTE-logo.png' %}" style="width:150px; height:120px;">
+                    <img class="img2" src="{% static 'img/jntuhlogo.png' %}" style="width:100px; height:120px;"> </a> -->
+          <!-- <a class="img2" href="Home.html"><img src="img/jntuhlogo.png" style="width:100px; height:110px;"> </a> -->
+        </div>
+        <h2>CSI WESLEY INSTITUTE OF TECHNOLOGY AND SCIENCES</h2>
+        <h3>(APPROVED BY AICTE AND AFFILIATED TO JNTUH)</h3>
+        <div class="p" style="display: flex">
+          <p class="eamcet">
+            EAMCET Code :<span style="color: #ff0000">WESL</span>
+          </p>
+          &nbsp;&nbsp;&nbsp;
+          <p class="ecet">
+            ECET Code : <span style="color: #ff0000">WESL</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="top">
+      <!-- header start -->
+      <header class="header">
+        <div class="container">
+          <div class="header-main">
+            <div class="open-nav-menu">
+              <span></span>
+            </div>
+            <div class="menu-overlay"></div>
+            <!-- navigation menu start -->
+            <nav class="nav-menu">
+              <div class="close-nav-menu">
+                <!-- <img src="img/clg1.jpg" alt="close"> -->
+              </div>
+              <ul class="menu">
+                <li class="menu-item">
+                  <a href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu"
+                    >About<i class="plus"></i>
+                  </a>
+                  <ul class="sub-menu">
+                    <li class="menu-item">
+                      <a href="{% url 'about' %}">About College</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="{% url 'vision' %}">Vision & Mission</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="{% url 'chairmanDesk' %}">Chairman Desk</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="{% url 'directorDesk'%}">Director Desk</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="{% url 'principal' %}">Principal Desk</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="{% url 'universityNominee' %}"
+                        >University Nominee</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="{%  url 'staff' %}">Staff</a>
+                </li>
+
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu"
+                    >Labs<i class="plus"></i
+                  ></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item">
+                      <a href="{% url 'computerLab' %}">Computer Lab</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="{% url 'ELCSAndALCLab' %}">ELCS And ALCS lab</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="{% url 'EngineeringWorkshop' %}"
+                        >Engineering Workshop</a
+                      >
+                    </li>
+                    <li class="menu-item">
+                      <a href="{% url 'BEELab' %}">BEE Lab</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="{% url 'ChemistryLab' %}">Chemistry Lab</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="{% url 'PhysicsLab' %}">Physics Lab</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="{%url 'ITWorkshop' %}">IT Workshop</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="{%  url 'course' %}">Course Offered</a>
+                </li>
+                <!-- <li class="menu-item">
+                                          <a href="#">Libarary</a>
+                                           </li> -->
+
+                <li class="menu-item">
+                  <a href="{%  url 'staff' %}">Library</a>
+                </li>
+                <li class="menu-item">
+                  <a href="{%  url 'staff' %}">Placement Cell</a>
+                </li>
+                <li class="menu-item">
+                  <a href="/login" data-toggle="sub-menu"
+                    >Faculty Login
+                    <!-- <i class="plus"></i> -->
+                  </a>
+                  <!-- <ul class="sub-menu">
+                       <li class="menu-item"><a href="facultylogin.html">Faculty Login</a></li>
+                       <li class="menu-item"><a href="studentlogin.html">Student Login</a></li>
+                       <li class="menu-item"><a href="#">page 3</a></li>
+                       <li class="menu-item"><a href="#">page 4</a></li> -->
+                  <!-- </ul> -->
+                </li>
+
+                <li class="menu-item">
+                  <a href="/login">Student Login</a>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu"
+                    >AICTE<i class="plus"></i>
+                  </a>
+                  <ul class="sub-menu">
+                    <li class="menu-item">
+                      <a href="{% url 'about' %}">Disclosures</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="{% url 'vision' %}">Approvels</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="{% url 'chairmanDesk' %}">Grevence</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="{% url 'gallery' %}">Gallery</a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="{% url 'contact' %}">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- navigation menu end -->
+          </div>
+        </div>
+      </header>
+      <!-- header end -->
+
+      <!-- home section start -->
+      <section class="home-section">
+        <div class="wlcm">
+          <div>
+            <a class="img" href="{% url 'home' %}"
+              ><img
+                src="{% static 'img/WITS_LOGO.png' %}"
+                style="width: 140px; height: 150px; top: 0"
+              />
+            </a>
+          </div>
+
+          <span style="--i: 1">W</span>
+          <span style="--i: 2">E</span>
+          <span style="--i: 3">L</span>
+          <span style="--i: 4">C</span>
+          <span style="--i: 5">O</span>
+          <span style="--i: 6">M</span>
+          <span style="--i: 7">E</span>
+          <div class="wlcm">
+            <span style="--i: 8">T</span>
+            <span style="--i: 9">O&nbsp</span>
+          </div>
+          <div class="wlcm">
+            <span style="--i: 10">C</span>
+            <span style="--i: 11">S</span>
+            <span style="--i: 12">I&nbsp;</span>
+            <span style="--i: 13">W</span>
+            <span style="--i: 14">E</span>
+            <span style="--i: 15">S</span>
+            <span style="--i: 16">L</span>
+            <span style="--i: 17">E</span>
+            <span style="--i: 18">Y&nbsp</span>
+
+            <span style="--i: 19">E</span>
+            <span style="--i: 20">N</span>
+            <span style="--i: 21">G</span>
+            <span style="--i: 22">I</span>
+            <span style="--i: 23">N</span>
+            <span style="--i: 24">E</span>
+            <span style="--i: 25">E</span>
+            <span style="--i: 26">R</span>
+            <span style="--i: 28">N</span>
+            <span style="--i: 29">G&nbsp</span>
+            <span style="--i: 30">C</span>
+            <span style="--i: 31">O</span>
+            <span style="--i: 32">L</span>
+            <span style="--i: 33">L</span>
+            <span style="--i: 34">E</span>
+            <span style="--i: 35">G</span>
+            <span style="--i: 36">E</span>
+          </div>
+          <!-- <h4>||"WELCOME TO CSI WESLEY ENGINEERING COLLEGE"||</h4> -->
+          <!-- <div class=""><div class="elementskit-border-star"></div></div> -->
+        </div>
+      </section>
+      <marquee class="mar"
+        >CSI WITS established in year 2015 , is one of the premier engineering
+        colleges in the state of Telangana. WITS is sponsored by CHURCH OF SOUTH
+        INDIA MEDAK DIOCESE ,well known in Hyderabad ,for the past 100 years,
+        for running various educational institutions of repute.WITS is approved
+        by All India Council for Technical Education (AICTE), New Delhi, and
+        affiliated to Jawaharlal Nehru Technological University (JNTU),
+        Hyderabad and recognized by Govt. of Telangana.
+      </marquee>
+
+      <section class="desk1" style="background-color: whitesmoke">
+        <div class="wrapper">
+          <div class="box">
+            <div class="box-img">
+              <img src="{% static 'img/director.png' %}" class="img1" />
+            </div>
+            <div class="box-text">
+              <h2 class="title-head">DIRECTOR</h2>
+              <h1>Dr. B VIMAL SUKUMAR</h1>
+              <p class="p">B.Com(Honours),MBA,LLB,M.Com,M.Phil,Ph.D</p>
+              <div class="link-5">
+                <a href="{% url 'directorDesk' %}">
+                  <span class="thin">Click here for</span
+                  ><span class="thick">Director’s Desk</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="desk2" style="background-color: whitesmoke">
+        <div class="wrapper">
+          <div class="box">
+            <div class="box-img1">
+              <img src="{% static 'img/chairman.png' %}" class="img" />
+            </div>
+            <div class="box-text">
+              <h2 class="title-head">CHAIRMAN</h2>
+              <h1>Rt. Rev. Dr. A. C. Solomon Raj</h1>
+              <p class="p">
+                B.Com, B.D.(Serampore), M.Th(Serampore). Doctorate(Senate of
+                Serampore College(University)
+              </p>
+
+              <div class="link-5">
+                <a href="{% url 'chairmanDesk' %}">
+                  <span class="thin">Click here for</span
+                  ><span class="thick">Chairman’s Desk</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="desk3" style="background-color: whitesmoke">
+        <div class="wrapper">
+          <div class="box">
+            <div class="box-img">
+              <img src=" {% static 'img/41.png' %}" class="im" />
+            </div>
+            <div class="box-text">
+              <h2 class="title-head">PRINCIPAL</h2>
+              <h1>Dr. P M YOHAN</h1>
+              <p class="p">MCA, MBA, M.Tech, Ph.D</p>
+              <div class="link-5">
+                <a href="{% url 'principal' %}">
+                  <span class="thin">Click here for</span
+                  ><span class="thick">Principal’s Desk</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="vis">
+        <div class="mvv-container">
+          <div class="col">
+            <h2>Mission</h2>
+            <div class="br"></div>
+            <div class="mvv-block">
+              <div class="image">
+                <img src="{% static 'img/Mission.jpg'%}" alt="" />
+              </div>
+              <div class="content">
+                <p class="v1">
+                  It is the mission of the College to engage students of
+                  uncommon promise in an intense full-time education of their
+                  minds, exploration of their creative faculties, and
+                  development of their social and leadership abilities in a
+                  four-year course of study and residence that concludes with a
+                  Baccalaurate degree in Technology.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col2">
+            <h2>Vision</h2>
+            <div class="br"></div>
+            <div class="mvv-block">
+              <div class="image">
+                <img src="{% static 'img/vision.jpg'%}" alt="" />
+              </div>
+              <div class="content">
+                <p class="v1">
+                  To be a Value based Globally Recognized Institution ensuring
+                  academic excellence and fostering Research, Innovation and
+                  Entrepreneurial Attitude.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col3">
+            <h2>Values</h2>
+            <div class="br"></div>
+            <div class="mvv-block">
+              <div class="image">
+                <img src="{% static 'img/values.jpg'%}" alt="" />
+              </div>
+              <div class="content">
+                <p class="v1">
+                  To be a Value based Globally Recognized Institution ensuring
+                  academic excellence and fostering Research, Innovation and
+                  Entrepreneurial Attitude.&nbsp; Core Values (S T E E R)
+                </p>
+                <ul class="ul">
+                  <li>Strength</li>
+                  <li>Truth</li>
+                  <li>Endurance</li>
+                  <li>Ethics</li>
+                  <li>Reverence for All</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script src="{% static 'js/script.js' %}"></script>
+      <!-- <script>
+var navbar = document.getElementsByClassName("nav-menu")
+var menu = document.getElementsByClassName("menu")
+
+window.onscroll = function(){
+   if (window.pageYOffset >= menu.OffsetTop) {
+      navbar.classList.add("sticky");
+
+   }
+   else{
+      navbar.classList.remove("sticky");
+   }
+
+
+}
+</script> -->
+    </div>
+  </body>
+
+  <div class="footer">
+    <div class="inner-footer">
+      <!--  for company name and description -->
+      <div class="footer-items">
+        <h1>About College</h1>
+        <div class="border1"></div>
+        <p>
+          CSI WITS established in year 2015 , is one of the premier engineering
+          colleges in the state of Telangana. WITS is sponsored by CHURCH OF
+          SOUTH INDIA MEDAK DIOCESE ,for the past 100 years. WITS is approved by
+          All India Council for Technical Education (AICTE), New Delhi, and
+          affiliated to Jawaharlal Nehru Technological University (JNTU),
+          Hyderabad.
+        </p>
+      </div>
+
+      <!--  for quick links  -->
+      <div class="footer-items">
+        <h3>Quick Links</h3>
+        <div class="border1"></div>
+        <!--for the underline -->
+        <ul>
+          <a href="{% url 'home' %}">
+            <li>Home</li>
+          </a>
+          <a href="#">
+            <li>Labs</li>
+          </a>
+          <a href="{% url 'contact' %}">
+            <li>Contact</li>
+          </a>
+          <a href="{% url 'about' %}">
+            <li>About</li>
+          </a>
+        </ul>
+      </div>
+
+      <!--  for some other links -->
+      <div class="footer-items">
+        <h3>Quick Links</h3>
+        <div class="border1"></div>
+        <!--for the underline -->
+        <ul>
+          <a href="{% url 'gallery' %}">
+            <li>Gallery</li>
+          </a>
+          <a href="{% url 'staff' %}">
+            <li>Staff</li>
+          </a>
+          <a href="{% url 'result' %}">
+            <li>Results</li>
+          </a>
+          <a href="{% url 'principal' %}">
+            <li>About Principal</li>
+          </a>
+        </ul>
+      </div>
+
+      <!--  for contact us info -->
+      <div class="footer-items">
+        <h3>Contact us</h3>
+        <div class="border1"></div>
+        <ul>
+          <li>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>1-7-132/142,P.G
+            ROAD,NEAR PARADISE Secunderabad-50003, Telangana,India.
+          </li>
+          <li><i class="fa fa-phone" aria-hidden="true"> </i>040-27818137</li>
+          <li>
+            <i class="fa fa-envelope" aria-hidden="true"></i
+            >principalxu1@gmail.com
+          </li>
+        </ul>
+
+        <!--   for social links -->
+        <div class="social-media">
+          <h5
+            style="
+              border-bottom: 2px solid orange;
+              text-align: center;
+              color: #fff;
+            "
+          >
+            Follow Us
+          </h5>
+          <a href="https://instagram.com/csiwits?igshid=YmMyMTA2M2Y="
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!--   Footer Bottom start  -->
+    <div class="footer-bottom">Copyright &copy; CSI WITS 2022.</div>
+  </div>
+
+  <!--   Footer Bottom end -->
+
+  <!--   FOOTER END -->
+</html>

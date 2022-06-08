@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CSI WITS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+
+    <div class="top">
+        <div class="topbar-box">
+            <div class="logo">
+                <a class="img" href="{% url 'home' %}"><img src="{% static 'img/WITS_LOGO.png' %}"
+                        style="width:100px; height:110px;"> </a>
+                <a class="img1" href="{% url 'home' %}"><img src="{% static 'img/AICTE-logo.png' %}"
+                        style="width:150px; height:120px;">
+                    <img src="{% static 'img/jntuhlogo.png' %}" style="width:100px; height:120px;"> </a>
+                <!-- <a class="img2" href="Home.html"><img src="img/jntuhlogo.png" style="width:100px; height:110px;"> </a> -->
+            </div>
+            <h2>CSI WESLEY INSTITUTE OF TECHNOLOGY AND SCIENCES</h2>
+            <h3>(APPROVED BY AICTE AND AFFILIATED TO JNTUH)</h3>
+            <div class="p" style="display: flex;">
+                <p class="eamcet">EAMCET Code :<span style="color: #ff0000;">WESL</span> </p>&nbsp;&nbsp;&nbsp;
+                <p class="ecet">ECET Code : <span style="color: #ff0000;">WESL</span></p>
+
+            </div>
+
+        </div>
+
+        <!-- header start -->
+        <header class="header">
+            <div class="container">
+                <div class="header-main">
+
+                    <div class="open-nav-menu">
+                        <span></span>
+                    </div>
+                    <div class="menu-overlay">
+                    </div>
+                    <!-- navigation menu start -->
+                    <nav class="nav-menu">
+                        <div class="close-nav-menu">
+                            <!-- <img src="img/clg1.jpg" alt="close"> -->
+                        </div>
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="{% url 'home' %}">Home</a>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+
+                                <a href="#" data-toggle="sub-menu">About<i class="plus"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="{% url 'about' %}">About College</a></li>
+                                    <li class="menu-item"><a href="{% url 'vision' %}">Vision & Mission</a></li>
+
+                                    <li class="menu-item"><a href="{% url 'chairmanDesk' %}">Chairman Desk</a></li>
+                                    <li class="menu-item"><a href="{% url 'directorDesk'%}">Director Desk</a></li>
+                                    <li class="menu-item"><a href="{% url 'principal' %}">Principal Desk</a></li>
+                                    <li class="menu-item"><a href="{% url 'universityNominee' %}">University Nominee</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="{%  url 'staff' %}">Staff</a>
+                            </li>
+
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#" data-toggle="sub-menu">Labs<i class="plus"></i></a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="{% url 'computerLab' %}">Computer Lab</a></li>
+                                    <li class="menu-item"><a href="{% url 'ELCSAndALCLab' %}">ELCS And ALCS lab</a></li>
+                                    <li class="menu-item"><a href="{% url 'EngineeringWorkshop' %}">Engineering
+                                            Workshop</a></li>
+                                    <li class="menu-item"><a href="{% url 'BEELab' %}">BEE Lab</a></li>
+                                    <li class="menu-item"><a href="{% url 'ChemistryLab' %}">Chemistry Lab</a></li>
+                                    <li class="menu-item"><a href="{% url 'PhysicsLab' %}">Physics Lab</a></li>
+                                    <li class="menu-item"><a href="{%url 'ITWorkshop' %}">IT Workshop</a></li>
+                                </ul>
+                            </li>
+                            <!-- <li class="menu-item">
+                   <a href="#">Libarary</a>
+                </li> -->
+
+                            <li class="menu-item">
+                                <a href="{%  url 'staff' %}">Library</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="{%  url 'staff' %}">Placement Cell</a>
+                            </li>
+                            <li class="menu-item">
+
+                                <a href="{%  url 'facultylogin' %}" data-toggle="sub-menu">Faculty Login
+                                    <!-- <i class="plus"></i> -->
+                                </a>
+                                <!-- <ul class="sub-menu">
+                       <li class="menu-item"><a href="facultylogin.html">Faculty Login</a></li>
+                       <li class="menu-item"><a href="studentlogin.html">Student Login</a></li>
+                       <li class="menu-item"><a href="#">page 3</a></li>
+                       <li class="menu-item"><a href="#">page 4</a></li> -->
+                                <!-- </ul> -->
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="{% url 'studentlogin' %}">Student Login</a>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+
+                                <a href="#" data-toggle="sub-menu">AICTE<i class="plus"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="{% url 'about' %}">Disclosures</a></li>
+                                    <li class="menu-item"><a href="{% url 'vision' %}">Approvels</a></li>
+                                    <li class="menu-item"><a href="{% url 'chairmanDesk' %}">Grevence</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="{% url 'gallery' %}">Gallery</a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="{% url 'contact' %}">Contact Us</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <!-- navigation menu end -->
+                </div>
+            </div>
+
+        </header>
+        <!-- header end -->
+
+        <!-- home section start -->
+
+        <section class="vis">
+
+            <div class="mvv-container">
+                <div class="col">
+                    <h2>Mission</h2>
+                    <div class="br"></div>
+                    <div class="mvv-block">
+                        <div class="image">
+                            <img src="{% static 'img/Mission.jpg'%}" alt="">
+                        </div>
+                        <div class="content">
+
+                            <p class="v1">
+                                It is the mission of the College to engage students of uncommon promise in an intense
+                                full-time education of their minds, exploration of their creative faculties, and
+                                development of their social and leadership abilities in a four-year course of study and
+                                residence that concludes with a Baccalaurate degree in Technology.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col2">
+                    <h2>Vision</h2>
+                    <div class="br"></div>
+                    <div class="mvv-block">
+                        <div class="image">
+
+                            <img src="{% static 'img/vision.jpg'%}" alt="">
+                        </div>
+                        <div class="content">
+
+                            <p class="v1">
+                                To be a Value based Globally Recognized Institution ensuring academic excellence and
+                                fostering Research, Innovation and Entrepreneurial Attitude.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col3">
+                    <h2>Values</h2>
+                    <div class="br"></div>
+                    <div class="mvv-block">
+                        <div class="image">
+                            <img src="{% static 'img/values.jpg'%}" alt="">
+                        </div>
+                        <div class="content">
+
+                            <p class="v1">
+                                To be a Value based Globally Recognized Institution ensuring academic excellence and
+                                fostering Research, Innovation and Entrepreneurial Attitude.&nbsp;
+
+                                Core Values (S T E E R)
+
+                            </p>
+                            <ul class="ul">
+                                <li>Strength</li>
+                                <li>Truth</li>
+                                <li>Endurance</li>
+                                <li>Ethics</li>
+                                <li>Reverence for All</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- <p class="intro" style="align-items: center;color:blue; letter-spacing:0.5px; line-height:30px">CSI WITS established in year 2015 , is one of the premier engineering colleges in the state of Telangana. WITS is sponsored by CHURCH OF SOUTH INDIA MEDAK DIOCESE ,well known in Hyderabad ,for the past 100 years, for running various educational institutions of repute.WITS is approved by All India Council for Technical Education (AICTE), New Delhi, and affiliated to Jawaharlal Nehru Technological University (JNTU), Hyderabad and recognized by Govt. of Telangana.</p> -->
+
+        <!-- <footer> -->
+        <!-- <div class="footer-content"> -->
+        <!-- <h3>CSI Wesley </h3> -->
+        <!-- <p>csi wits engineering college , paradise,sec-bad</p> -->
+        <!-- <ul class="socials">
+           <li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+           <li><a href="#"><i class="fa fa-Google-plus"> </i></a></li>
+
+
+       </ul> -->
+
+        <!-- </div> -->
+        <!-- <div class="footer-bottom">
+       <p> copyright &copy2021 CSI WITS</p>
+
+   </div>
+</footer> -->
+        <!-- home section end -->
+
+        <script src="js/script.js">
+        </script>
+        <!-- <script> 
+var navbar = document.getElementsByClassName("nav-menu")
+var menu = document.getElementsByClassName("menu")
+
+window.onscroll = function(){
+   if (window.pageYOffset >= menu.OffsetTop) {
+      navbar.classList.add("sticky");
+      
+   }
+   else{
+      navbar.classList.remove("sticky");
+   }
+
+   
+}
+</script> -->
+
+    </div>
+</body>
+
+</html>
+<div class="footer">
+    <div class="inner-footer">
+
+        <!--  for company name and description -->
+        <div class="footer-items">
+            <h1>About College</h1>
+            <div class="border1"></div>
+            <p>CSI WITS established in year 2015 , is one of the premier engineering colleges in the state of Telangana.
+                WITS is sponsored by CHURCH OF SOUTH INDIA MEDAK DIOCESE ,for the past 100 years. WITS is approved by
+                All India Council for Technical
+                Education (AICTE), New Delhi, and affiliated to Jawaharlal Nehru Technological University (JNTU),
+                Hyderabad.</p>
+        </div>
+
+        <!--  for quick links  -->
+        <div class="footer-items">
+            <h3>Quick Links</h3>
+            <div class="border1"></div>
+            <!--for the underline -->
+            <ul>
+                <a href="{% url 'home' %}">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>Labs</li>
+                </a>
+                <a href="{% url 'contact' %}">
+                    <li>Contact</li>
+                </a>
+                <a href="{% url 'about' %}">
+                    <li>About</li>
+                </a>
+            </ul>
+        </div>
+
+        <!--  for some other links -->
+        <div class="footer-items">
+            <h3>Quick Links</h3>
+            <div class="border1"></div>
+            <!--for the underline -->
+            <ul>
+                <a href="{% url 'gallery' %}">
+                    <li>Gallery</li>
+                </a>
+                <a href="{% url 'staff' %}">
+                    <li>Staff</li>
+                </a>
+                <a href="#">
+                    <li>Results</li>
+                </a>
+                <a href="{% url 'principal' %}">
+                    <li>About Principal</li>
+                </a>
+            </ul>
+        </div>
+
+        <!--  for contact us info -->
+        <div class="footer-items">
+            <h3>Contact us</h3>
+            <div class="border1"></div>
+            <ul>
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i>1-7-132/142,P.G ROAD,NEAR PARADISE
+                    Secunderabad-50003, Telangana,India.
+                </li>
+                <li><i class="fa fa-phone" aria-hidden="true"> </i>040-27818137</li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i>principalxu1@gmail.com </li>
+            </ul>
+
+            <!--   for social links -->
+            <div class="social-media">
+                <div class="social-media">
+                    <h5 style="border-bottom: 2px solid orange; text-align:center;color:#fff"> Follow Us </h5>
+                    <a href="https://instagram.com/csiwits?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!--   Footer Bottom start  -->
+        <div class="footer-bottom">
+            Copyright &copy; CSI WITS 2022.
+        </div>
+    </div>
+
+    <!--   Footer Bottom end -->
+
+    <!--   FOOTER END -->
+
+    </html>
